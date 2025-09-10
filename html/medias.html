@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Geral</title>
+    <link rel="stylesheet" href="../css/medias.css">
+</head>
+<body>
+    <header>
+        <section>
+            <img src="../imagens/gimp.png" alt="logoUnilurio">
+            <h1>Desempenho Académico</h1>
+            
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Menu principal</a></li>
+                <li><a href="#">Outra Página</a></li>
+                <li><a href="#">Outra Página</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cálculo de Média Geral</h1>
+        <p>Preencha os campos para poder calcular a média da disciplina</p>
+        <div id="campos_testes">
+            <h3>Preencha os Testes</h3>
+            <div class="preenchendo">
+                <label for="teste1">Teste 1</label><input type="number" name="teste1" id="teste1" required placeholder="0.0" min="0" max="20">
+            </div>
+            <div class="preenchendo">
+                <label for="teste2">Teste 2</label><input type="number" name="teste2" id="teste2" required placeholder="0.0" min="0" max="20">
+            </div>
+        </div>
+        <div id="campos_miniTestes">
+            <h3>Preencha os mini_testes</h3>
+            <div class="preenchendo">
+                <label for="mini_teste1">Mini-teste 1</label><input type="number" name="mini_teste1" id="mini_teste1" required placeholder="0.0" min="0" max="20">
+            </div>
+            <div class="preenchendo">
+                <label for="mini_teste2">Mini-teste 2</label><input type="number" name="mini_teste2" id="mini_teste2" required placeholder="0.0" min="0" max="20">
+            </div>
+        </div>
+        <div id="botaoCalcular">
+            <button>Calcular a Média</button>
+        </div>
+
+        <section class="aviso" id="aviso">
+            
+        </section>
+    </main>
+    <footer>
+        <p>Calculadora criada pelas Bigbones Projects&reg;</p>
+        <a href="#">Quem somos nós?</a>
+        <a href="#">Onde nos achar?</a>
+        <p></p>
+    </footer>
+</body>
+</html>
