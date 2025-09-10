@@ -79,7 +79,7 @@ main section#princiContent{
 }
 
 main h1{
-    
+    font-weight: bolder;
     font-size: 1.2em;
     text-align: center;
     color: red;
@@ -96,17 +96,20 @@ main p{
     line-height: 1.5;
 }
 
-input{
-    width: 70%;
-    border-radius: 5px;
-}
-
 main div.preenchendo{
     background-color: white;
     margin-bottom: 2px;
     padding: 2px;
     border-radius: 15px;
 }
+
+input{
+    width: 90%;
+    border-radius: 5px;
+    height: 20px;
+}
+
+
 
 
 
