@@ -23,29 +23,31 @@
         </nav>
     </header>
     <main>
-        <h1>Cálculo de Média Geral</h1>
-        <p>Preencha os campos para poder calcular a média da disciplina</p>
-        <div id="campos_testes">
-            <h3>Preencha os Testes</h3>
-            <div class="preenchendo">
-                <label for="teste1">Teste 1</label><input type="number" name="teste1" id="teste1" required placeholder="0.0" min="0" max="20">
+        <section id="princiContent">
+            <h1>Cálculo de Média Geral</h1>
+            <p>Preencha os campos para poder calcular a média da disciplina</p>
+            <div id="campos_testes">
+                <h3>Preencha os Testes</h3>
+                <div class="preenchendo">
+                    <label for="teste1">Teste 1</label><input type="number" name="teste1" id="teste1" required placeholder="0.0" min="0" max="20">
+                </div>
+                <div class="preenchendo">
+                    <label for="teste2">Teste 2</label><input type="number" name="teste2" id="teste2" required placeholder="0.0" min="0" max="20">
+                </div>
             </div>
-            <div class="preenchendo">
-                <label for="teste2">Teste 2</label><input type="number" name="teste2" id="teste2" required placeholder="0.0" min="0" max="20">
+            <div id="campos_miniTestes">
+                <h3>Preencha os mini_testes</h3>
+                <div class="preenchendo">
+                    <label for="mini_teste1">Mini-teste 1</label><input type="number" name="mini_teste1" id="mini_teste1" required placeholder="0.0" min="0" max="20">
+                </div>
+                <div class="preenchendo">
+                    <label for="mini_teste2">Mini-teste 2</label><input type="number" name="mini_teste2" id="mini_teste2" required placeholder="0.0" min="0" max="20">
+                </div>
             </div>
-        </div>
-        <div id="campos_miniTestes">
-            <h3>Preencha os mini_testes</h3>
-            <div class="preenchendo">
-                <label for="mini_teste1">Mini-teste 1</label><input type="number" name="mini_teste1" id="mini_teste1" required placeholder="0.0" min="0" max="20">
+            <div id="botaoCalcular">
+                <button>Calcular a Média</button>
             </div>
-            <div class="preenchendo">
-                <label for="mini_teste2">Mini-teste 2</label><input type="number" name="mini_teste2" id="mini_teste2" required placeholder="0.0" min="0" max="20">
-            </div>
-        </div>
-        <div id="botaoCalcular">
-            <button>Calcular a Média</button>
-        </div>
+        </section>
 
         <section class="aviso" id="aviso">
             

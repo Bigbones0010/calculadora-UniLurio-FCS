@@ -43,27 +43,72 @@ header h1{
     margin-top: 0%;
 }
 
-header li{
-    list-style: none;
-    display: inline-block;
-    background-color: goldenrod;
-    border-radius: 5px;
+header nav{
+    width: 100%;
 }
 
-header nav{
-    padding: 10px 10px 0px 10px;
+header li{
+   
+    list-style: none;
+   
 }
+
 
 header a{
     text-decoration: none;
+    display: block;
     color: white;
+    text-align: center;
+     background-color: goldenrod;
+    border: 1px solid blue;
+    padding: 2px;
 }
 
 
 
 main{
+    font-size: 1em;
+    background-color: aqua;
+    width: 96vw;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+}
+
+main section#princiContent{
+    padding: 15px;
+}
+
+main h1{
+    
+    font-size: 1.2em;
+    text-align: center;
+    color: red;
+    background-image: linear-gradient(to right, rgb(0, 110, 255), transparent);
+}
+
+main h3{
+    padding: 5px;
 
 }
+
+main p{
+    text-indent: 9px;
+    line-height: 1.5;
+}
+
+input{
+    width: 70%;
+    border-radius: 5px;
+}
+
+main div.preenchendo{
+    background-color: white;
+    margin-bottom: 2px;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+
 
 footer{
 
