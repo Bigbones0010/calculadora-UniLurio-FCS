@@ -7,75 +7,79 @@
     <link rel="stylesheet" href="../css/medias.css">
 </head>
 <body>
-    <header class="primario">
-        <section>
-            <img src="../imagens/gimp.png" alt="logoUnilurio">
-            <h1>Desempenho Académico</h1>
-            
-        </section>
-        <nav>
-            <div id="menu" onclick="tirar_colocar_menu()"><img src="../imagens/ic_menu_black_24dp.png" alt="Menu"></div>
-            <ul id="visto_menu">
-                <li><a href="../index.html">Menu principal</a></li>
-                <li><a href="#">Outra Página</a></li>
-                <li><a href="#">Outra Página</a></li>
-                <li><a href="https://bigbones0010.github.io/projecto-social">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="primario">
-        <section id="princiContent">
-            <h1>Cálculo de Média Geral</h1>
-            <p>Preencha os campos para poder calcular a média da disciplina</p>
-            <div id="campos_testes">
-                <h3>Preencha os Testes</h3>
-                <div class="preenchendo">
-                    <label for="teste1">Teste 1</label><input type="number" name="teste1" id="teste1" required placeholder="0.0" min="0" max="20">
-                </div>
-                <div class="preenchendo">
-                    <label for="teste2">Teste 2</label><input type="number" name="teste2" id="teste2" required placeholder="0.0" min="0" max="20">
-                </div>
-            </div>
-            <div id="campos_miniTestes">
-                <h3>Preencha os mini_testes</h3>
-                <div class="preenchendo">
-                    <label for="mini_teste1">Mini-teste 1</label><input type="number" name="mini_teste1" id="mini_teste1" required placeholder="0.0" min="0" max="20">
-                </div>
-                <div class="preenchendo">
-                    <label for="mini_teste2">Mini-teste 2</label><input type="number" name="mini_teste2" id="mini_teste2" required placeholder="0.0" min="0" max="20">
-                </div>
-            </div>
-            <div id="botaoCalcular">
-                <button onclick="calculadora ()">Calcular a Média</button>
-            </div>
-        </section>
-
+    <section class="primario">
+        <header>
+            <section>
+                <img src="../imagens/gimp.png" alt="logoUnilurio">
+                <h1>Desempenho Académico</h1>
         
-    </main>
+            </section>
+            <nav>
+                <div id="menu" onclick="tirar_colocar_menu()"><img src="../imagens/ic_menu_black_24dp.png" alt="Menu"></div>
+                <ul id="visto_menu">
+                    <li><a href="../index.html">Menu principal</a></li>
+                    <li><a href="#">Outra Página</a></li>
+                    <li><a href="#">Outra Página</a></li>
+                    <li><a href="https://bigbones0010.github.io/projecto-social">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="princiContent">
+                <h1>Cálculo de Média Geral</h1>
+                <p>Preencha os campos para poder calcular a média da disciplina</p>
+                <div id="campos_testes">
+                    <h3>Preencha os Testes</h3>
+                    <div class="preenchendo">
+                        <label for="teste1">Teste 1</label><input type="number" name="teste1" id="teste1" required placeholder="Introduza de (0 a 20)" min="0" max="20">
+                    </div>
+                    <div class="preenchendo">
+                        <label for="teste2">Teste 2</label><input type="number" name="teste2" id="teste2" required placeholder="Introduza de (0 a 20)" min="0" max="20">
+                    </div>
+                </div>
+                <div id="campos_miniTestes">
+                    <h3>Preencha os mini_testes</h3>
+                    <div class="preenchendo">
+                        <label for="mini_teste1">Mini-teste 1</label><input type="number" name="mini_teste1" id="mini_teste1" required placeholder="Introduza de (0 a 20)" min="0" max="20">
+                    </div>
+                    <div class="preenchendo">
+                        <label for="mini_teste2">Mini-teste 2</label><input type="number" name="mini_teste2" id="mini_teste2" required placeholder="Introduza de (0 a 20)" min="0" max="20">
+                    </div>
+                </div>
+                <div id="botaoCalcular">
+                    <button onclick="calculadora ()">Calcular a Média</button>
+                    <button onclick="limparCampos()" id="limpador">Limpar campos</button>
+                </div>
+            </section>
+        
+        </main>
+        
+        <footer>
+            <p>Calculadora criada pelas Bigbones Projects&reg;</p>
+            <a href="#">Quem somos nós?</a>
+            <a href="#">Onde nos achar?</a>
+            <p>Baseado no modelo de avaliação da Faculdade de Ciências de Saúde - Universidade Lúrio</p>
+            <p>Muito obrigado! 2025</p>
+        </footer>
+    </section>
+
     <section class="aviso" id="aviso">
-        <h3>Os seus resultados</h3>
+        <div id="titulo">
+            
+        </div>
 
         <div id="testesEminitestes">
-            <p>Media de Testes: </p>
-            <p>Media de MiniTestes: </p>
+            
         </div>
 
         <div id="gerEarred">
-            <p>Media Geral: </p>
-            <p>Media Geral arredondada: </p>
+            
         </div>
         <div id="message">
-            <p>Parabéns você admitiu</p>
+            
         </div>
-        <button>voltar</button>
+        <button onclick="removeMessaging()">voltar</button>
     </section>
-    <footer class="primario">
-        <p>Calculadora criada pelas Bigbones Projects&reg;</p>
-        <a href="#">Quem somos nós?</a>
-        <a href="#">Onde nos achar?</a>
-        <p>Baseado no modelo de avaliação da Faculdade de Ciências de Saúde - Universidade Lúrio</p>
-        <p>Muito obrigado! 2025</p>
-    </footer>
 
     <script src="../js/medias.js"></script>
 </body>
