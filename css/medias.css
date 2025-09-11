@@ -21,7 +21,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, blue, rgb(0, 225, 255));
+    background-image: linear-gradient(to bottom, rgba(164, 164, 235, 0.589), rgb(0, 225, 255));
     
 }
 
@@ -41,6 +41,7 @@ header h1{
     font-size: 1.3em;
     display: inline-block;
     margin-top: 0%;
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.493);
 }
 
 header nav{
@@ -59,13 +60,18 @@ header a{
     display: block;
     color: white;
     text-align: center;
-     background-color: goldenrod;
-    border: 1px solid blue;
+    background-color: goldenrod;
+    border: 1px solid aqua;
     padding: 2px;
+    border-radius: 5px;
 }
 
 header a:hover{
     background-color: gold;
+}
+
+#visto_menu{
+    display: none;
 }
 
 nav #menu{
@@ -73,6 +79,7 @@ nav #menu{
     background-color: aqua;
     padding: 0%;
     text-align: center;
+    
 }
 
 nav #menu img{
@@ -88,6 +95,7 @@ main{
     width: 96vw;
     border-radius: 0px 0px 10px 10px;
     margin: auto;
+    margin-top: 1px;
 }
 
 main section#princiContent{
@@ -98,8 +106,8 @@ main h1{
     font-weight: bolder;
     font-size: 1.2em;
     text-align: center;
-    color: red;
-    background-image: linear-gradient(to right, rgb(0, 110, 255), transparent);
+    color: rgb(98, 65, 141);
+    text-shadow: 4px 5px 12px rgba(0, 0, 0, 0.61);
 }
 
 main h3{
