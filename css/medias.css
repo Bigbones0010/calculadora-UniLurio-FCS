@@ -175,6 +175,25 @@ section.aviso{
     box-shadow: 6px 7px 11px 4px rgba(0, 0, 0, 0.774);
 }
 
+section.aviso h3{
+    text-align: center;
+    padding: 2px;
+}
+
+section.aviso #testesEminitestes{
+    padding-left: 5px;
+}
+
+section.aviso #message{
+    text-align: center;
+    padding-top: 10px;
+}
+
+section.aviso #gerEarred{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
 section.aviso button{
     position: absolute;
     top: 80%;
