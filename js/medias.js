@@ -76,9 +76,14 @@ function calculadora (){
         alerta.innerHTML=`<p>Muitíssimos parabéns a media chega para dispensar</p>`
         alerta.style.color= "rgb(255, 215, 0)"
 
-    } else if(media>=10){
+    } else if((media>=10) && (media<16)){
         alerta.style.color="rgb(0, 255, 0)"
         alerta.innerHTML=`<p>Parabéns a media chega para admitir (Boa sorte no exame!)</p>`
        
-    }else if((media<10)){}
+    }else if((media>=0) && (media<10)){
+        alerta.style.color="rgb(231, 93, 93)"
+        alerta.innerHTML=`<p>Infelizmente a nota não chega para admitir</p>`
+    }else{
+        alerta.innerHTML=`<p>Verifique os valores que colocou nas áreas de teste e mini-teste...</p>`
+    }
 }

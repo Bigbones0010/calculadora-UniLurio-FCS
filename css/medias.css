@@ -192,15 +192,8 @@ section.aviso #testesEminitestes{
 section.aviso #message{
     text-align: center;
     padding-top: 10px;
-    color: rgb(255, 215, 0);
+    color: rgb(255, 0, 157);
 }
-
-/* paleta para msg
-    red: rgb(231, 93, 93)
-    green: rgb(0, 255, 0)
-    gold: rgb(255, 215, 0)
-*/
-
 
 section.aviso #gerEarred{
     padding-top: 20px;
