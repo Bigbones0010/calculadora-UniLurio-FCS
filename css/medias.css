@@ -156,6 +156,28 @@ button{
     padding: 5px;
 }
 
+section.aviso{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.781));
+    color: white;
+    border-radius: 15px;
+    box-shadow: 6px 7px 11px 4px rgba(0, 0, 0, 0.774);
+}
+
+section.aviso button{
+    position: absolute;
+    top: 80%;
+    color: black;
+    background-color: rgba(0, 255, 221, 0.808);
+
+}
+
 footer{
     width: 100vw;
     margin: auto;

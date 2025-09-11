@@ -24,6 +24,5 @@ function calculadora (){
     var calculandoMiniteste = ((miniTeste1+miniTeste2)/2)*0.25
 
     var media = calculandoteste+calculandoMiniteste
-
     alert (media)
 }
