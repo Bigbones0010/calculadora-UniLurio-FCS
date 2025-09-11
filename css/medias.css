@@ -21,6 +21,11 @@ body{
     width: 100vw;
 }
 
+.primario{
+    filter: blur(5px);
+    pointer-events: none;
+}
+
 header{
     background-image: linear-gradient(to bottom, rgba(164, 164, 235, 0.589), rgb(0, 225, 255));
     
@@ -192,3 +197,4 @@ footer a{
     display: block;
     padding: 2px;
 }
+
