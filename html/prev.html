@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão</title>
+</head>
+<body>
+    <header>
+        <section>
+                <img src="../imagens/gimp.png" alt="logoUnilurio">
+                <h1>Desempenho Académico</h1>
+        
+            </section>
+            <nav>
+                <div id="menu" onclick="tirar_colocar_menu()"><img src="../imagens/ic_menu_black_24dp.png" alt="Menu"></div>
+                <ul id="visto_menu">
+                    <li><a href="../index.html">Menu principal</a></li>
+                    <li><a href="#">Outra Página</a></li>
+                    <li><a href="#">Outra Página</a></li>
+                    <li><a href="https://bigbones0010.github.io/projecto-social">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h1>Previsão</h1>
+        <p>Nesta área pode prever qual nota tirar na próxima avaliação para poder admitir ou dispensar</p>
+
+        <table>
+            <tr>
+                <td>Quantos testes realizou?</td>
+                <td>
+                    <input type="radio" name="teste" id="Tu1m"><label for="Tu1m">1</label>
+
+                    <input type="radio" name="teste" id="Td2s"><label for="Td2s">2</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Quantos mini-testes realizou?</td>
+                <td>
+                    <input type="radio" name="miniTeste" id="Mu1m"><label for="Mu1m">1</label>
+                    <input type="radio" name="miniTeste" id="Md2s"><label for="Md2s">2</label>
+                </td>
+            </tr>
+        </table>
+
+        
+        <h2>Para Admitir</h2>
+        <p>Introduza as notas correspondentes e clique em "prever"</p>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="admTeste1">Teste1</label></td>
+                <td>
+                    <input type="number" name="teste1" id="admTeste1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="admTeste2">Teste2</label></td>
+                <td>
+                    <input type="number" name="teste2" id="admTeste2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="admMiniTeste1">Mini-Teste 1</label>
+                </td>
+                <td>
+                    <input type="number" name="mini_teste1" id="admMiniTeste1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="admMiniTeste2">Mini-Teste 2</label>
+                </td>
+                <td>
+                    <input type="number" name="mini_teste1" id="admMiniTeste2">
+                </td>
+            </tr>
+        </table>
+
+        <button>Prever</button>
+
+        <h2>Para Dispensar</h2>
+        <p>Introduza as notas correspondentes e clique em "prever"</p>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="dispTeste1">Teste1</label></td>
+                <td>
+                    <input type="number" name="teste1" id="dispTeste1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dispTeste2">Teste2</label>
+                </td>
+                <td>
+                    <input type="number" name="teste2" id="dispTeste2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dispMiniTeste1">Mini-Teste 1</label>
+                </td>
+                <td>
+                    <input type="number" name="mini_teste1" id="dispMiniTeste1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dispMiniTeste2">Mini-Teste 2</label>
+                </td>
+                <td>
+                    <input type="number" name="mini_teste1" id="dispMiniTeste2">
+                </td>
+            </tr>
+        </table>
+        <button>Prever</button>
+    </main>
+    <footer>
+        <p>Calculadora criada pelas Bigbones Projects&reg;</p>
+            <a href="#">Quem somos nós?</a>
+            <a href="#">Onde nos achar?</a>
+            <p>Baseado no modelo de avaliação da Faculdade de Ciências de Saúde - Universidade Lúrio</p>
+            <p>Muito obrigado! 2025</p>
+    </footer>
+
+    <script>
+
+        function show(){
+            
+        }
+    </script>
+</body>
+</html>
