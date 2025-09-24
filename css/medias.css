@@ -5,6 +5,34 @@
     preto: #000000
 */
 
+@font-face {
+    font-family: "Paixao";
+    src: url("../fontes/Passion_One/PassionOne-Regular.ttf"), format("truetype");
+    font-weight: 400; /*Regular*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Paixao";
+    src: url("../fontes/Passion_One/PassionOne-Bold.ttf"), format("truetype");
+    font-weight: 700; /*Bold*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Paixao";
+    src: url("../fontes/Passion_One/PassionOne-Black.ttf"), format("truetype");
+    font-weight: 900; /*Black*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sriracha";
+    src: url("../material/fontes/Sriracha/Sriracha-Regular.ttf"), format("truetype");
+    font-weight: normal; /*Regular*/
+    font-style: normal;
+}
+
 *{
     margin: 0%;
     padding: 0%;
@@ -89,6 +117,7 @@ nav #menu img{
 
 
 main{
+    font-family: "Paixao";
     font-size: 1em;
     background-color: aqua;
     width: 96vw;
@@ -120,6 +149,10 @@ main p{
     line-height: 1.5;
 }
 
+main>section>table>tbody>tr>td>label{
+    margin-right: 2.2px;
+}
+
 main div.preenchendo{
     display: block;
     background-color: white;
@@ -134,7 +167,7 @@ main div.preenchendo:hover{
     color: white;
 }
 
-input{
+.preenchendo input{
     width: 90%;
     height: 20px;
     background-color: transparent;
@@ -222,3 +255,10 @@ footer a{
     padding: 2px;
 }
 
+#dia_dia{
+    display: none;
+}
+
+#ilustra{
+    display: none;
+}

@@ -27,28 +27,54 @@
         <main>
             <section id="princiContent">
                 <h1>Cálculo de Média Geral</h1>
+                <h2>Seleccione a quantidade de avaliações</h2>
+                <table>
+
+                    <tr>
+                        <td>Quantidade de testes</td>
+                        <td>
+                            <input type="radio" name="qteste" id="qteste1" onclick="spaces(1,0)"><label for="qteste1">1</label>
+
+                            <input type="radio" name="qteste" id="qteste2" onclick="spaces(2,0)"><label for="qteste2">2</label>
+
+                            <input type="radio" name="qteste" id="qteste3" onclick="spaces(3,0)"><label for="qteste3">3</label>
+
+                            <input type="radio" name="qteste" id="qteste4" onclick="spaces(4,0)"><label for="qteste4">4</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Quantidade de mini-testes</td>
+                        <td>
+                            <input type="radio" name="qminiteste" id="qminiteste1" onclick="spaces(0,1)"><label for="qminiteste1">1</label>
+
+                            <input type="radio" name="qminiteste" id="qminiteste2" onclick="spaces(0,2)"><label for="qminiteste2">2</label>
+
+                            <input type="radio" name="qminiteste" id="qminiteste3" onclick="spaces(0,3)"><label for="qminiteste3">3</label>
+
+                            <input type="radio" name="qminiteste" id="qminiteste4" onclick="spaces(0,4)"><label for="qminiteste4">4</label>
+                        </td>
+                    </tr>
+                </table>
                 <p>Preencha os campos para poder calcular a média da disciplina</p>
                 <div id="campos_testes">
                     <h3>Preencha os Testes</h3>
-                    <div class="preenchendo">
-                        <label for="teste1">Teste 1</label><input type="number" name="teste1" id="teste1" required placeholder="Introduza de (0 a 20)" min="0" max="20">
-                    </div>
-                    <div class="preenchendo">
-                        <label for="teste2">Teste 2</label><input type="number" name="teste2" id="teste2" required placeholder="Introduza de (0 a 20)" min="0" max="20">
-                    </div>
+                    <section id="totCamp_test">
+                        <div class="preenchendo">
+                            <label for="teste1">Teste 1</label><input type="number" name="teste1" id="teste1" required placeholder="Introduza de (0 a 20)" min="0" max="20">
+                        </div>
+                    </section>
                 </div>
                 <div id="campos_miniTestes">
                     <h3>Preencha os mini_testes</h3>
-                    <div class="preenchendo">
-                        <label for="mini_teste1">Mini-teste 1</label><input type="number" name="mini_teste1" id="mini_teste1" required placeholder="Introduza de (0 a 20)" min="0" max="20">
-                    </div>
-                    <div class="preenchendo">
-                        <label for="mini_teste2">Mini-teste 2</label><input type="number" name="mini_teste2" id="mini_teste2" required placeholder="Introduza de (0 a 20)" min="0" max="20">
-                    </div>
+                    <section id="totCamp_Minitest">
+                        <div class="preenchendo">
+                            <label for="mini_teste1">Mini-teste 1</label><input type="number" name="mini_teste1" id="mini_teste1" required placeholder="Introduza de (0 a 20)" min="0" max="20">
+                        </div>
+                    </section>
                 </div>
                 <div id="botaoCalcular">
-                    <button onclick="calculadora ()">Calcular a Média</button>
-                    <button onclick="limparCampos()" id="limpador">Limpar campos</button>
+                    <button onclick="calculadora (1,1)">Calcular a Média</button>
+                    <button onclick="limparCampos(1,1)" id="limpador">Limpar campos</button>
                 </div>
             </section>
         
@@ -56,11 +82,11 @@
         
         <footer>
             <p>Calculadora criada pelas Bigbones Projects&reg;</p>
-            <a href="#">Quem somos nós?</a>
+            <a href="prev.html">Quem somos nós?</a>
             <a href="#">Onde nos achar?</a>
             <p>Baseado no modelo de avaliação da Faculdade de Ciências de Saúde - Universidade Lúrio</p>
             <p>Muito obrigado! 2025</p>
-            <img src="../imagens/gimp.png" alt="logoUnilurio">
+            <img src="../imagens/gimp.png" alt="logoBB">
         </footer>
     </section>
 
@@ -80,6 +106,16 @@
             
         </div>
         <button onclick="removeMessaging()">voltar</button>
+    </section>
+
+    <section id="dia_dia">
+        <h3>Mensagens diárias</h3>
+        <p>Estudar apresenta diversas vertentes, mas cabe a cada um decidir como deseja proceder, o essencial é estar por livre e espontanea vontade, assim poderá dar o seu melhor e não estará obrigado a agradecer ou culpar ninguém pelo que acontecer</p>
+
+    </section>
+
+    <section id="ilustra">
+        <img src="../imagens/think.png" alt="pensa">
     </section>
 
     <script src="../js/medias.js"></script>

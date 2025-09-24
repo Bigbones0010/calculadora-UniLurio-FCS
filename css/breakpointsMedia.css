@@ -3,7 +3,9 @@
 
 @media (min-width: 577px){
 
-
+    body{
+        background-color: rgba(0, 255, 255, 0.514);
+    }
 
     header h1{
         font-size: 2.5em;
@@ -39,6 +41,8 @@
 
     main{
         width: 500px;
+        background-color: transparent;
+        box-shadow: none;
     }
 
     main h1{
@@ -63,16 +67,20 @@
         font-size: 1.3em;
     }
 
-    input{
+    .preenchendo input{
         font-size: 0.8em;
         text-align: center;
     }
 
-    button{
+    #botaoCalcular{
+        text-align: center;
+    }
+
+    main button{
         color: blue;
         font-size: 1.2em;
         background-color: transparent;
-    
+        width: 45%;
 }
 
     button:hover{
@@ -91,9 +99,57 @@
         color: white;
 }
 
-    
+    section.aviso{
+        width: 400px;
+        height: 270px;
+}    
+
+    section.aviso h3{
+    font-size: 1.7em;
+}
+
+    section.aviso p{
+        font-size: 1.4em;
+    }
+
+    section.aviso button{
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+    footer{
+    background-color: rgba(202, 247, 247, 0.774);
+    border-radius: 25%;
+    color: rgb(38, 0, 255);
+}
+
 
 }
+
+
+@media (min-width: 1025px){
+
+    #dia_dia{
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 72%;
+        width: 250px;
+        text-align: justify;
+    }
+
+    #ilustra{
+    display: block;
+    position: absolute;
+    top: 250px;
+    left: 5%;
+}
+
+    #ilustra img{
+        width: 200px;
+    }
+}
+
 
 @media print{
     .primario{
