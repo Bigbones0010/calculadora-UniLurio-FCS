@@ -27,34 +27,30 @@
         <main>
             <section id="princiContent">
                 <h1>Cálculo de Média Geral</h1>
-                <h2>Seleccione a quantidade de avaliações</h2>
-                <table>
-
-                    <tr>
-                        <td>Quantidade de testes</td>
-                        <td>
-                            <input type="radio" name="qteste" id="qteste1" onclick="spaces(1,0)"><label for="qteste1">1</label>
-
-                            <input type="radio" name="qteste" id="qteste2" onclick="spaces(2,0)"><label for="qteste2">2</label>
-
-                            <input type="radio" name="qteste" id="qteste3" onclick="spaces(3,0)"><label for="qteste3">3</label>
-
-                            <input type="radio" name="qteste" id="qteste4" onclick="spaces(4,0)"><label for="qteste4">4</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Quantidade de mini-testes</td>
-                        <td>
-                            <input type="radio" name="qminiteste" id="qminiteste1" onclick="spaces(0,1)"><label for="qminiteste1">1</label>
-
-                            <input type="radio" name="qminiteste" id="qminiteste2" onclick="spaces(0,2)"><label for="qminiteste2">2</label>
-
-                            <input type="radio" name="qminiteste" id="qminiteste3" onclick="spaces(0,3)"><label for="qminiteste3">3</label>
-
-                            <input type="radio" name="qminiteste" id="qminiteste4" onclick="spaces(0,4)"><label for="qminiteste4">4</label>
-                        </td>
-                    </tr>
-                </table>
+                
+                <section class="select">
+                    <table>
+                        <caption>Seleccione a quantidade de avaliações</caption>
+                        <tr>
+                            <td>Nº de testes</td>
+                            <td>
+                                <input type="radio" name="qteste" id="qteste1" onclick="spaces(1,0)"><label for="qteste1">1</label>
+                                <input type="radio" name="qteste" id="qteste2" onclick="spaces(2,0)"><label for="qteste2">2</label>
+                                <input type="radio" name="qteste" id="qteste3" onclick="spaces(3,0)"><label for="qteste3">3</label>
+                                <input type="radio" name="qteste" id="qteste4" onclick="spaces(4,0)"><label for="qteste4">4</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nº de mini-testes</td>
+                            <td>
+                                <input type="radio" name="qminiteste" id="qminiteste1" onclick="spaces(0,1)"><label for="qminiteste1">1</label>
+                                <input type="radio" name="qminiteste" id="qminiteste2" onclick="spaces(0,2)"><label for="qminiteste2">2</label>
+                                <input type="radio" name="qminiteste" id="qminiteste3" onclick="spaces(0,3)"><label for="qminiteste3">3</label>
+                                <input type="radio" name="qminiteste" id="qminiteste4" onclick="spaces(0,4)"><label for="qminiteste4">4</label>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
                 <p>Preencha os campos para poder calcular a média da disciplina</p>
                 <div id="campos_testes">
                     <h3>Preencha os Testes</h3>
@@ -92,18 +88,20 @@
 
     <section class="aviso" id="aviso">
         <div id="titulo">
-            
+            <h3>Os Seus Resultados</h3>
         </div>
 
         <div id="testesEminitestes">
-            
+            <p>Media de Testes: 8.2579</p>
+            <p>Media de MiniTestes: 3.4568</p>
         </div>
 
         <div id="gerEarred">
-            
+            <p>Média Geral: 12,54</p>
+            <p>Média Geral Arredondada: 12</p>
         </div>
         <div id="message">
-            
+            <p>Verifique os valores que colocou nas áreas de teste e mini-teste...</p>
         </div>
         <button onclick="removeMessaging()">voltar</button>
     </section>

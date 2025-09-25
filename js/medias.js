@@ -218,7 +218,7 @@ function calculadora (testes,minitestes){
     var mediaduo = media.toFixed(2)
     var mediaArred = Math.round(media)
 
-    titulo.innerHTML=`<h3>Os seus resultados</h3>` 
+    titulo.innerHTML=`<h3>Os Seus Resultados</h3>` 
     mostraMedias.innerHTML=`<p>Media de Testes: ${calculandoteste}</p>
             <p>Media de MiniTestes: ${calculandoMiniteste}</p>`
 

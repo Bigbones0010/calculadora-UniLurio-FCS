@@ -6,21 +6,21 @@
 */
 
 @font-face {
-    font-family: "Paixao";
+    font-family: "Paixao_reg";
     src: url("../fontes/Passion_One/PassionOne-Regular.ttf"), format("truetype");
     font-weight: 400; /*Regular*/
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Paixao";
+    font-family: "Paixao_bol";
     src: url("../fontes/Passion_One/PassionOne-Bold.ttf"), format("truetype");
     font-weight: 700; /*Bold*/
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Paixao";
+    font-family: "Paixao_bla";
     src: url("../fontes/Passion_One/PassionOne-Black.ttf"), format("truetype");
     font-weight: 900; /*Black*/
     font-style: normal;
@@ -29,6 +29,19 @@
 @font-face {
     font-family: "Sriracha";
     src: url("../material/fontes/Sriracha/Sriracha-Regular.ttf"), format("truetype");
+    font-weight: normal; /*Regular*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nabla";
+    src: url("../fontes/Nabla/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf"), format("truetype");
+    
+}
+
+@font-face {
+    font-family: "Vasta";
+    src: url("../fontes/Vast_Shadow/VastShadow-Regular.ttf"), format("truetype");
     font-weight: normal; /*Regular*/
     font-style: normal;
 }
@@ -64,6 +77,7 @@ header section{
 }
 
 header h1{
+    font-family: "Nabla";
     font-size: 1.3em;
     margin-top: 0%;
     color: rgba(5, 43, 146, 0.815);
@@ -83,6 +97,7 @@ header li{
 
 
 header a{
+    font-family: "Paixao_reg";
     text-decoration: none;
     display: block;
     color: white;
@@ -117,8 +132,8 @@ nav #menu img{
 
 
 main{
-    font-family: "Paixao";
-    font-size: 1em;
+    font-family: "Vasta";
+    font-size: 0.8em;
     background-color: aqua;
     width: 96vw;
     border-radius: 0px 0px 10px 10px;
@@ -147,6 +162,11 @@ main h3{
 main p{
     text-indent: 9px;
     line-height: 1.5;
+}
+
+table{
+    margin: 10px auto;
+    text-align: center;
 }
 
 main>section>table>tbody>tr>td>label{
@@ -184,6 +204,7 @@ main div#botaoCalcular{
 }
 
 button{
+    font-family: "Paixao_reg";
     width: 100%;
     font-size: 0.9em;
     background-color: rgb(0, 68, 255);
@@ -198,38 +219,44 @@ button{
 }
 
 section.aviso{
+    font-family: "Vasta";
     display: none;
     width: 250px;
     height: 200px;
     border: 1px solid black;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.781));
-    color: white;
+    color: rgb(156, 236, 242);
     border-radius: 15px;
     box-shadow: 6px 7px 11px 4px rgba(0, 0, 0, 0.774);
 }
 
 section.aviso h3{
     text-align: center;
-    padding: 2px;
+    padding: 4px;
+    font-size: 1em;
+    color:white;
 }
 
 section.aviso #testesEminitestes{
     padding-left: 5px;
+    font-size: 0.75em;
 }
 
 section.aviso #message{
     text-align: center;
     padding-top: 10px;
     color: rgb(255, 0, 157);
+    font-size: 0.75em;
 }
 
 section.aviso #gerEarred{
     padding-top: 20px;
     padding-left: 5px;
+    font-size: 0.75em;
 }
 
 section.aviso button{
@@ -241,6 +268,7 @@ section.aviso button{
 }
 
 footer{
+    font-family: 'Courier New', Courier, monospace;
     width: 100vw;
     margin: auto;
     background-color: black;
