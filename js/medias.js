@@ -28,16 +28,48 @@ function removeMessaging(){
     }
 }
 
-function limparCampos(){
+function limparCampos(testes,mini_testes){
     let teste1= document.getElementById("teste1")
     let teste2= document.getElementById("teste2")
+    let teste3= document.getElementById("teste3")
+    let teste4= document.getElementById("teste4")
     let mini_teste1= document.getElementById("mini_teste1")
     let mini_teste2= document.getElementById("mini_teste2")
+    let mini_teste3= document.getElementById("mini_teste3")
+    let mini_teste4= document.getElementById("mini_teste4")
 
-    teste1.value=""
-    teste2.value=""
-    mini_teste1.value=""
-    mini_teste2.value=""
+    if(testes==1){
+        teste1.value=""
+    }else if(testes==2){
+        teste1.value=""
+        teste2.value=""
+    }else if(testes==3){
+        teste1.value=""
+        teste2.value=""
+        teste3.value=""
+    }else if(testes==4){
+        teste1.value=""
+        teste2.value=""
+        teste3.value=""
+        teste4.value=""
+    }
+    
+    if (mini_testes==1){
+        mini_teste1.value=""
+    }else if (mini_testes==2){
+        mini_teste1.value=""
+        mini_teste2.value=""
+    }else if (mini_testes==3){
+        mini_teste1.value=""
+        mini_teste2.value=""
+        mini_teste3.value=""
+    }else if (mini_testes==4){
+        mini_teste1.value=""
+        mini_teste2.value=""
+        mini_teste3.value=""
+        mini_teste4.value=""
+    }
+    
 }
 
 let campesin_testes= document.getElementById("totCamp_test")
@@ -113,7 +145,7 @@ function spaces(tests, minitests){
                             <label for="mini_teste2">Mini-teste 2</label><input type="number" name="mini_teste2" id="mini_teste2" required placeholder="Introduza de (0 a 20)" min="0" max="20">
                         </div>
                         <div class="preenchendo">
-                            <label for="mini_teste3">Mini-teste 2</label><input type="number" name="mini_teste3" id="mini_teste3" required placeholder="Introduza de (0 a 20)" min="0" max="20">
+                            <label for="mini_teste3">Mini-teste 3</label><input type="number" name="mini_teste3" id="mini_teste3" required placeholder="Introduza de (0 a 20)" min="0" max="20">
                         </div>`
         allMinitest=3
     }else if (minitests==4){
